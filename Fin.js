@@ -1,5 +1,12 @@
-const statusDisplay = document.querySelector('.game---status');
+const visa = document.querySelector('.game---status');
 //Displays game---status
+
+let spelare = 'X';
+
+let spelinfo = [ "", "", "", "", "", "", "", "", "",];
+//9 "" for 9 cells to save information
+
+visa.innerHTML = tur();
 
 const treirad = [
     [0, 1, 2],
@@ -12,14 +19,20 @@ const treirad = [
     [2, 4, 6]
 ];
 
-let spelinfo = [ "", "", "", "", "", "", "", "", "",];
-//9 "" for 9 cells to save information
 
 
-if ( currentPlayer == "X" ) { 
+function speladCell(cell, celler) {
+status[celler]= spelare;
+cell.innerHtml = spealre;
+}
+
+function speltur() {
+
+}
+
+/*if ( currentPlayer == "X" ) { 
     document.querySelectorAll('.cell')[clickedCellIndex].style.color = "blue";
 }else{
     document.querySelectorAll('.cell')[clickedCellIndex].style.color = "red";
 }
-//changes the color for the players
-
+//changes the color for the players*/
